@@ -1,48 +1,70 @@
 <!DOCTYPE html>
+<!-- HTML5 document -->
+
 <html lang="en">
+<!-- Page starts, language set to English -->
+
 <head>
     <meta charset="utf-8">
+    <!-- Allows proper character display -->
+
     <title>Contact Sea Bubbles</title>
+    <!-- Browser tab title -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Connects external CSS file -->
+
     <script src="root.js"></script>
+    <!-- Links JavaScript file for form validation -->
 </head>
 
 <body>
 
+    <!-- Navigation links -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About & Gallery</a>
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Page heading -->
     <header>
         <h1>Contact Us</h1>
     </header>
 
+    <!-- Main content area -->
     <main>
 
+        <!-- Contact form section -->
         <section>
             <h2>Send Us a Message</h2>
 
+            <!-- Runs validateForm() before submitting -->
             <form onsubmit="return validateForm()">
 
+                <!-- Name field -->
                 <label for="name">Name</label>
                 <input id="name" type="text" required>
 
+                <!-- Email field -->
                 <label for="email">Email</label>
                 <input id="email" type="email" required>
 
+                <!-- Message field -->
                 <label for="message">Message</label>
-<textarea id="message" rows="5" required></textarea>
+                <textarea id="message" rows="5" required></textarea>
 
+                <!-- Submit button -->
                 <button type="submit">Send</button>
 
             </form>
         </section>
 
+        <!-- Map showing location -->
         <section>
             <h2>Our Location</h2>
 
+            <!-- Embedded Google Map -->
             <iframe src="https://maps.google.com/maps?q=New%20Zealand&output=embed"
                     height="300"
                     loading="lazy">
@@ -52,6 +74,7 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
         © 2026 Sea Bubbles Pirate Guest House
     </footer>

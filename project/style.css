@@ -1,0 +1,132 @@
+﻿/* ===== PAGE BASICS ===== */
+
+body {
+    margin: 0; /* Removes default browser spacing */
+    font-family: Arial, sans-serif; /* Simple readable font */
+    background: #0e1a24; /* Dark ocean background */
+    color: #f5f0e6; /* Light text for contrast */
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    background: #1b2a38; /* Dark blue bar */
+    padding: 15px;
+    text-align: center; /* Centres the links */
+}
+
+    nav a {
+        color: #d4af37; /* Pirate gold colour */
+        margin: 0 15px; /* Space between links */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            color: white; /* Turns white when mouse hovers */
+        }
+
+/* ===== HEADER ===== */
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #16232e; /* Slightly lighter than body */
+}
+
+h1 {
+    color: #d4af37; /* Gold heading */
+    margin: 0;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    max-width: 900px; /* Keeps content centred and readable */
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: #16232e; /* Card-style section background */
+    padding: 20px;
+    margin-bottom: 25px; /* Space between sections */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    width: 100%; /* Makes images responsive */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ===== GALLERY ===== */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to move to next line */
+    gap: 15px; /* Space between images */
+}
+
+    .gallery img {
+        width: 30%; /* Shows 3 images per row on large screens */
+    }
+
+/* ===== FORM ===== */
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Submit button */
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #d4af37; /* Gold button */
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #f0cf6a; /* Lighter gold on hover */
+    }
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #1b2a38;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    color: #aaa;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media(max-width:768px) {
+    .gallery img {
+        width: 100%; /* Stack images on small screens */
+    }
+}
+
+/* ===== GOOGLE MAP ===== */
+
+iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
